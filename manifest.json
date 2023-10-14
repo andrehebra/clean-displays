@@ -7,3 +7,7 @@
     "windy": ["js/windy.js"],
     "foreflight": ["js/foreflight.js"],
 },
+
+"browser_action": {
+    "default_icon": "icon/favicon.png"
+},
