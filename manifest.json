@@ -2,3 +2,8 @@
 "name": "Clean Displays",
 "version":"1.0",
 "description": "Run javascript on webpages to remove unwanted overlaying elements",
+
+"background": {
+    "windy": ["js/windy.js"],
+    "foreflight": ["js/foreflight.js"],
+},
