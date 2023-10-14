@@ -1,23 +1,24 @@
-"manifest_version": 2,
-"name": "Clean Displays",
-"version":"1.0",
-"description": "Run javascript on webpages to remove unwanted overlaying elements",
+{
+    "manifest_version": 2,
+    "name": "Clean Displays",
+    "version":"1.0",
+    "description": "Run javascript on webpages to remove unwanted overlaying elements",
 
-"background": {
-    "windy": ["js/windy.js"],
-    "foreflight": ["js/foreflight.js"],
-},
+    "background": {
+        "windy": ["js/windy.js"],
+        "foreflight": ["js/foreflight.js"]
+    },
 
-"browser_action": {
-    "default_icon": "icon/favicon.png"
-},
+    "browser_action": {
+        "default_icon": "icon/favicon.png"
+    },
 
-"content_scripts": [
-    "matches": ["https://www.windy.com/*"],
-    "js": ["js/windy.js"],
-]
+    "content_scripts": [{
+        "matches": ["https://www.windy.com/*"],
+        "js": ["js/windy.js"]
+    }],
 
-"permissions": [
-    "tabs", "http://*/*"
-],
-
+    "permissions": [
+        "tabs", "http://*/*"
+    ]
+}
