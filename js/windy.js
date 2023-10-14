@@ -1,8 +1,11 @@
+//remove elements from webpage for a given HTML element id
 function clearElement(id) {
+    //get the element and load in
     const element = document.getElementById(id);
-    console.log(element);
+    //get the parent element
     const parent = element.parentNode;
-    console.log(parent);
+    
+    //remove the child of the parent element
     parent.removeChild(element);
 }
 
